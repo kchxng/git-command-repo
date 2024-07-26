@@ -1,6 +1,6 @@
 ![all text](git_logo.jpg)
 
-# Git Command Line
+# Git command there we always use to manage the project
 
 Keeping the git command line that we usually use to manage coding
 
