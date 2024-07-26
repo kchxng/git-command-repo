@@ -162,6 +162,22 @@ git reflogprune
 git prune
 ```
 
+## Verify remote URL
+
+```bash
+git remote -v
+```
+
+### Change or Update Remote URL
+
+- Refer [Click Here](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+
+```bash
+git remote set-url origin https://github.com/<OWNER>/<REPOSITORY>.git
+# ex:
+git remote set-url origin https://github.com/OWNER/REPOSITORY.git
+```
+
 ## Monitor repository log
 
 ```bash
