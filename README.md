@@ -12,7 +12,15 @@ Keeping the git command line that we usually use to manage coding
 git --version
 ```
 
-## Init git configuration
+## Initialize the git
+
+```bash
+git config --global --list # list all git caches
+git config --global user.name "<git_username>" # login into git by username
+git config --global user.email "<git_email>" # login into git by email
+```
+
+## Enable git configuration
 
 ```bash
 git init
@@ -48,6 +56,14 @@ git stash pop # Reuse the files that were stash or hidden
 
 ```bash
 git commit -m "<description of comments>"
+```
+
+## Add clould git remote URL info locally
+
+```bash
+git remote add origin <https://github.com/ower_repository.git>
+git branch -M main # set branch as main
+git push -uf origin <main> # push to main branch on server side as first commit
 ```
 
 ## Push directory to git repository
