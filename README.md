@@ -221,3 +221,34 @@ Copy the contents of your public key file to the clipboard:
 cat ~/.ssh/id_rsa.pub
 ```
 Then select and copy the key from the terminal to gitlab ssh
+
+## Git CI/CD
+- set name as `.gitlab-ci.yml`. Example as below
+```bash
+stages:
+  - test
+  - build
+  - deploy
+
+default:
+  image: golang:latest
+
+testing:
+  stage: test
+  script:
+    - echo "Starting with golang tests..."
+
+compile:
+  stage: build
+  script:
+    - echo "Starting to building binaries..."
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Starting to deploy"
+  only:
+    - main
+    - tags
+
+```
