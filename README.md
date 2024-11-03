@@ -152,12 +152,17 @@ git tag v1.0.0
 ```
 
 ## Git Rollback and cleanup squashed
-
+1. Undo the Last Commit but Keep Changes (Soft Reset)
+```bash
+git reset --soft HEAD~1
+```
+2. Undo the Last Commit and Discard Changes (Hard Reset)
 ```bash
 git reset --hard <squash_code>
 # ex:
 git reset --hard ce34ds
 ```
+**Note:** This will remove all changes from both your working directory and staging area, so only use it if you’re sure you don’t need the changes from that commit.
 
 ## Add Origin URL to repository
 
